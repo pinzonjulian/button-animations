@@ -79,23 +79,36 @@
 
 .ani-bounce
   animation: ani-bounce 3s infinite
-  animation-timing-function: cubic-bezier(.56,.19,.53,.9)
+
+$drop : cubic-bezier(.39,.74,.62,1)
+$raise : cubic-bezier(.73,.16,.93,.68)
+$transcaleInitialPos : translate(0, 0px) scale(1.1, 0.92)
+
 
 @keyframes ani-bounce 
+  20%
+    transform: translate(0, -120px)
+    animation-timing-function: $raise
   40%
-    transform: translate(0, -170px)
+    transform: $transcaleInitialPos
+    animation-timing-function: $drop
   50%
-    transform: translate(0,0)
-  60%
-    transform: translate(0, -100px)
-  70%
-    transform: translate(0,0)
-  80%
-    transform: translate(0, -70px)
+    transform: translate(0, -80px)
+    animation-timing-function: $raise
+  65%
+    transform: $transcaleInitialPos
+    animation-timing-function: $drop
+  75%
+    transform: translate(0, -60px)
+    animation-timing-function: $raise
   85%
-    transform: translate(0,0)
-  90%
+    transform: $transcaleInitialPos
+    animation-timing-function: $drop
+  95%
     transform: translate(0, -40px)
-  92%
-    transform: translate(0,0)
-  
+    animation-timing-function: $raise
+
+
+
+
+
