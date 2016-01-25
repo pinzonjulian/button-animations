@@ -1,0 +1,101 @@
+// Turn to circle
+
+.ani-glow
+  animation: ani-glow 0.7s linear infinite
+
+@keyframes ani-glow
+  50%
+    transform: scale(1.1, 1.1)
+
+.ani-rotate
+  animation: ani-rotate 2s infinite
+
+@keyframes ani-rotate
+  90%
+    transform: rotate(370deg)
+  100%
+    transform: rotate(360deg)
+
+// ================================================
+// CLOCK: TURN TO STICK AND ROTATE
+// ================================================
+
+.turn-to-stick
+  height: 3px !important
+  padding: 0px
+  width: 50px
+  font-size: 0px
+  transition: all 400ms ease-in-out
+
+.ani-clock
+  animation: ani-clock 4s infinite
+
+@keyframes ani-clock
+  8.333%
+    transform: rotate(30deg)
+  16.66%
+    transform: rotate(60deg)
+  25%
+    transform: rotate(90deg)
+  33.33%
+    transform: rotate(120deg)
+  41.66%
+    transform: rotate(150deg)
+  50%
+    transform: rotate(180deg)
+  58.33%
+    transform: rotate(210deg)
+  66.66%
+    transform: rotate(240deg)
+  75%
+    transform: rotate(270deg)
+  83.33%
+    transform: rotate(300deg)
+  91.66%
+    transform: rotate(330deg)
+  100%
+    transform: rotate(360deg)
+
+.ani-clock-auto
+  animation: ani-clock-auto 2s infinite
+  animation-timing-function: linear
+
+@keyframes ani-clock-auto
+  100%
+    transform: rotate(360deg)
+
+
+// ================================================
+// BOUNCE: TURN TO BALL AND BOUNCE
+// ================================================
+
+.turn-to-ball
+  height: 50px
+  width: 50px
+  padding: 0px
+  font-size: 0px
+  border-radius: 50%
+  transition: all 400ms ease-in-out
+
+.ani-bounce
+  animation: ani-bounce 3s infinite
+  animation-timing-function: cubic-bezier(.56,.19,.53,.9)
+
+@keyframes ani-bounce 
+  40%
+    transform: translate(0, -170px)
+  50%
+    transform: translate(0,0)
+  60%
+    transform: translate(0, -100px)
+  70%
+    transform: translate(0,0)
+  80%
+    transform: translate(0, -70px)
+  85%
+    transform: translate(0,0)
+  90%
+    transform: translate(0, -40px)
+  92%
+    transform: translate(0,0)
+  
