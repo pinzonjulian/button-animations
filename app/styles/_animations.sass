@@ -27,10 +27,10 @@
   font-size: 0px
   transition: all 400ms ease-in-out
 
-.ani-clock
-  animation: ani-clock 4s infinite
+.ani-clock-step
+  animation: ani-clock-step 4s infinite
 
-@keyframes ani-clock
+@keyframes ani-clock-step
   8.333%
     transform: rotate(30deg)
   16.66%
@@ -56,11 +56,11 @@
   100%
     transform: rotate(360deg)
 
-.ani-clock-auto
-  animation: ani-clock-auto 2s infinite
+.ani-clock-continous
+  animation: ani-clock-continous 2s infinite
   animation-timing-function: linear
 
-@keyframes ani-clock-auto
+@keyframes ani-clock-continous
   100%
     transform: rotate(360deg)
 
