@@ -23,6 +23,20 @@ gulp.task('sass', function (){
     .pipe(reload({stream:true}))
 })
 
+gulp.task('distcss', function (){
+  return gulp.src('app/styles/button-animations.sass')
+    .pipe(sass())
+    .pipe(autoprefixer())
+    .pipe(cssnano())
+    .pipe(gulp.dest('dist/'))
+})
+
+gulp.task('distjs', function (){
+	return gulp.src('app/js/button-animations.js')
+	.pipe(gulp.dest('dist/'))
+})
+
+
 
 gulp.task('browserSync', function (){
 	browserSync({
