@@ -8,8 +8,8 @@ This library requires Jquery.
 
 ## Prep
 
-1. Download button-animations.css and button-animations.js
-2. Add to your proyect as an import or directly in a script tag in your html
+1. Download button-animations.css and button-animations.js from the dist folder
+2. Add to your proyect as script and style tags or importing in your js and css files.
 
 ## Use
 
@@ -20,6 +20,8 @@ Add one of these clases to your button.
 3. clock-step
 4. clock-continous
 5. bouncer
+
+And let the magic happen!
 
 ## Support
 
