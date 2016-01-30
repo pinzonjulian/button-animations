@@ -14,6 +14,7 @@ This library requires Jquery.
 ## Use
 
 Add one of these clases to your button.
+
 1. glower
 2. rotator
 3. clock-step
