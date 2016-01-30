@@ -4,7 +4,7 @@ This is a little library/experiment on user experience that uses animations to i
 
 ## Requirements
 
-This library requieres only requieres Jquery.
+This library requires Jquery.
 
 ## Prep
 
